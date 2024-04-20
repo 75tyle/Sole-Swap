@@ -1,6 +1,6 @@
 import p1_img from './dunk-low-shoes.webp'
 
-let all_product = [
+export const all_product = [
     {
         id: 1,
         name: 'dunk low shoes',
