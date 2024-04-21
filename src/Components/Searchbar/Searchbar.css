@@ -17,6 +17,9 @@
 .searchbar_wrapper img{
     width: 25px;
 }
+.searchbar_wrapper:hover{
+    cursor: pointer;
+}
 .searchbar input{
     width: 90%;
     height: 45px;

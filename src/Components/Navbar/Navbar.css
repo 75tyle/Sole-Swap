@@ -9,6 +9,9 @@
     display: flex;
     align-items: center;
 }
+.nav-menu:hover{
+    cursor: pointer;
+}
 .nav-menu img{
     width: 25px;
 }
@@ -25,6 +28,9 @@
 .nav-cart{
     display: flex;
     align-items: center;
+}
+.nav-cart:hover{
+    cursor: pointer;
 }
 .nav-cart img{
     width: 25px;
