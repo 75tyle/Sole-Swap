@@ -2,9 +2,10 @@ import React from 'react'
 import { SidebarData } from './SidebarData'
 import './Sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+  console.log(props)
   return (
-    <div className='sidebar'>
+    <div className='sidebar' id={props.sidebar === true ? "show": "hide"}>
         <ul className='sidebar_list'>
             {SidebarData.map((val,key)=>{
             return (
