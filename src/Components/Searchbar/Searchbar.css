@@ -21,6 +21,7 @@
     cursor: pointer;
 }
 .searchbar input{
+    font-size: 18px;
     width: 90%;
     height: 45px;
     border: none;
