@@ -3,7 +3,7 @@ import Hero from '../Components/Hero/Hero'
 import Searchbar from '../Components/Searchbar/Searchbar'
 const MainPage = () => {
   return (
-    <div>
+    <div className='mainpage'>
       <Searchbar />
       <Hero />
     </div>

@@ -3,6 +3,7 @@ import './Navbar.css';
 import Cart_icon from '../Assets/cart-shopping-solid (1).svg';
 import Nav_menu from '../Assets/bars-solid (1).svg';
 import Sidebar from '../Sidebar/Sidebar';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
           <h1>Sole-Swap</h1>
         </div>
         <div className="nav-cart">
-          <img src={Cart_icon} alt="" />
+          <Link to={'/cart'}><img src={Cart_icon} alt="" /></Link>
         </div>
       </div>
     </>
