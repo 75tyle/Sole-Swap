@@ -1,0 +1,12 @@
+.item{
+    background: grey;
+    width: 250px;
+    height: 303.03px;
+}
+
+@media(max-width:500px){
+    .item{
+        width: 165px;
+        height: 200px;
+    }
+}
