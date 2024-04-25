@@ -1,4 +1,5 @@
 import React from 'react'
+import './CSS/Listing.css'
 
 const Listing = () => {
   return (

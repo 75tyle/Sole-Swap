@@ -1,4 +1,5 @@
 import React from 'react'
+import './CSS/Account.css'
 
 const Account = () => {
   return (
