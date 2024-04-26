@@ -1,12 +1,55 @@
 .item{
-    background: grey;
-    width: 250px;
-    height: 303.03px;
+    background: white;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 242.42px;
 }
+.item p{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.item img{
+    width: 90%;
+}
+.item button{
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    height: 55px;
+    background: #006340;
+    color: white;
+    font-size: larger;
+    margin-top: 10px;
+}
+.highestbid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media(max-width:500px){
     .item{
         width: 165px;
         height: 200px;
+    }
+    .item p{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .item button{
+        width: 90%;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+        height: 45px;
+        background: #006340;
+        font-size: 14px;
+        color: white;
     }
 }
