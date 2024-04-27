@@ -27,7 +27,7 @@
 .searchbar input{
     font-size: 18px;
     width: 90%;
-    height: 45px;
+    height: 35px;
     border: none;
     border-radius: 10px;
 }
@@ -46,8 +46,12 @@
     }
     .searchbar input{
         width: 85%;
-        height: 45px;
+        height: 35px;
         border: none;
         border-radius: 10px;
+    }
+    .searchbar_wrapper img{
+        width: 25px;
+        margin-right: 10px;
     }
 }
