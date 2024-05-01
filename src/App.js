@@ -10,6 +10,7 @@ import Account from './Pages/Account';
 import LoginSignup from './Pages/LoginSignup';
 import Cart from './Pages/Cart';
 import Product from './Pages/Product';
+import Authentication from './Pages/Authentication';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/product' element={<Product />} >
           
         </Route>
+        <Route path='/auth' element={<Authentication />} />
         <Route path='/login' element={<LoginSignup />} />
         <Route path='/cart' element={<Cart />} />
       </Routes>

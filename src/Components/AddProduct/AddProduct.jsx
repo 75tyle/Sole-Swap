@@ -30,13 +30,17 @@ const AddProduct = () => {
   return (
     <div className="container">
       <form onSubmit={handleSubmit} className="form-container">
+       <div className="form-group">
+          <label>Upload Image:</label>
+          <input type="file" accept="image/*" onChange={handleImageChange} />
+        </div>
         <div className="form-group">
           <label>Product Name:</label>
           <input type="text" value={productName} onChange={(e) => setProductName(e.target.value)} />
         </div>
         <div className="form-group">
           <label>Product Description:</label>
-          <textarea value={productDescription} onChange={(e) => setProductDescription(e.target.value)} />
+          <textarea className='description_area' value={productDescription} onChange={(e) => setProductDescription(e.target.value)} />
         </div>
         <div className="form-group">
           <label>Product Size:</label>
@@ -54,10 +58,6 @@ const AddProduct = () => {
             <option value="1 day">1 day</option>
             <option value="1 week">1 week</option>
           </select>
-        </div>
-        <div className="form-group">
-          <label>Upload Image:</label>
-          <input type="file" accept="image/*" onChange={handleImageChange} />
         </div>
         <button type="submit">Add Product</button>
       </form>
