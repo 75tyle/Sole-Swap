@@ -1,3 +1,115 @@
 .productdisplay{
-    margin-top: 60px;
+    display: flex;
+    /* margin-top: 60px; */
+}
+.productdisplay hr{
+    display: none;
+}
+.productdisplay_left img{
+    margin-left: 10px;
+    width: 300px;
+}
+.productdisplay_left h1{
+    margin: 0;
+    margin-left: 10px;
+}
+.productdisplay_left p{
+    margin: 0;
+    text-align: left;
+    margin-left: 10px;
+}
+.productdisplay_right{
+    margin: 100px;
+}
+.currentbid h1{
+    align-items: center;
+    display: flex;
+    font-size: x-large;
+    margin: 0;
+}
+.currentbid{
+    background: border-box;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid black;
+    justify-content: center;
+    width: 340px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.place_bid{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+}
+.place_bid input{
+    font-size: 20px;
+    width: 215px;
+    height: 50px;
+}
+.place_bid button{
+    font-size: 20px;
+    height: 50px;
+}
+.listedtime{
+    margin-left: 10px;
+}
+@media(max-width:500px){
+    .productdisplay{
+        display: block;
+    }
+    .productdisplay hr{
+        display: block;
+    }
+    .productdisplay_right{
+        margin: 0px;
+    }
+    .productdisplay_left img{
+        margin-left: 10px;
+        width: 300px;
+    }
+    .productdisplay_left h1{
+        margin: 0;
+        margin-left: 10px;
+    }
+    .productdisplay_left p{
+        margin: 0;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .currentbid{
+        background: border-box;
+        align-items: center;
+        display: flex;
+        border-radius: 5px;
+        border: 1px solid black;
+        justify-content: center;
+        width: 340px;
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .currentbid h1{
+        
+        align-items: center;
+        display: flex;
+        font-size: x-large;
+        
+    }
+   
+    .place_bid input{
+        width: 215px;
+        height: 50px;
+    }
+    .place_bid button{
+        height: 50px;
+    }
+    .listedtime{
+        margin-left: 10px;
+    }
 }

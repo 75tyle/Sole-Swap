@@ -1,3 +1,56 @@
-.authentication{
-    margin-top: 60px;
-}
+
+    .authentication {
+        max-width: 500px;
+        /* margin-top: 60px; */
+        margin: 80px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+      
+      .authentication h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        font-weight: bold;
+      }
+      
+      input[type='text'],
+      input[type='file'] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+      
+      button {
+        padding: 10px 20px;
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      @media(max-width:500px){
+        .authentication{
+            width: 300px;
+        }
+        .authentication h1{
+            font-size: 25px;
+        }
+      }

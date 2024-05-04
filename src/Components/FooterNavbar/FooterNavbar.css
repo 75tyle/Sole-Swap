@@ -28,7 +28,7 @@
 }
 
 .listing{
-    margin: 0px 65px 0px 65px;
+    /* margin: 0px 65px 0px 65px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,5 +57,21 @@
     width: 25px;
 }
 .profile span{
+    font-size: 10px;
+}
+
+.authenticate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.authenticate:hover{
+    cursor: pointer;
+}
+.authenticate img{
+    width: 25px;
+}
+.authenticate span{
     font-size: 10px;
 }

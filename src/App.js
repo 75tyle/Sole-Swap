@@ -11,6 +11,7 @@ import LoginSignup from './Pages/LoginSignup';
 import Cart from './Pages/Cart';
 import Product from './Pages/Product';
 import Authentication from './Pages/Authentication';
+import AdminPage from './Pages/AdminPage';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/auth' element={<Authentication />} />
         <Route path='/login' element={<LoginSignup />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/admin' element={<AdminPage />} />
       </Routes>
       <FooterNavbar />
       </BrowserRouter>
