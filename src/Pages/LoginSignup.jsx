@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './CSS/LoginSignup.css';
+import { useNavigate } from "react-router-dom";
+
 
 const LoginSignup = () => {
+  const navigate = useNavigate();
+
   const [isLogin, setIsLogin] = useState(true);
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
@@ -19,9 +24,37 @@ const LoginSignup = () => {
       if (isLogin) {
         // Handle login
         console.log('Logging in with:', email, password);
+        var loginData = {
+          Email:email,
+          Password:password
+        }
+        console.log(loginData);
+
+        axios.post('http://localhost:4011/api/user/login',loginData).then(res =>{
+          if(res.data.code === 200){
+            localStorage.setItem("isLogin","true")
+            navigate("/")
+          }else{
+            console.log("Something went wrong")
+          }
+        })
+        // var data = await  axios.post('http://localhost:4011/api/user/login',loginData);
+        // console.log(data)
+
       } else {
         // Handle signup
         console.log('Signing up with:', username, email, password);
+        var signupData = {
+          Name:username,
+          Email:email,
+          Password:password
+        }
+        console.log(signupData);
+        // var data = axios.post();
+        axios.post('http://localhost:4011/api/user/createuser',signupData).then(res =>{
+          console.log(res)
+        })
+        
       }
     } else {
       setErrors(errors);

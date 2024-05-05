@@ -1,22 +1,25 @@
 import React from 'react'
-import { SidebarData } from './SidebarData'
 import './Sidebar.css'
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar = (props) => {
   console.log(props)
+  const navigate = useNavigate();
+  const isUserCheck = () =>{
+    if(localStorage.getItem("isLogin")){
+      localStorage.removeItem("isLogin")
+      navigate("/login")
+    }else{
+      console.log('sdfghjk')
+    }
+  }
   return (
     <div className='sidebar' id={props.sidebar === true ? "show": "hide"}>
         <ul className='sidebar_list'>
-            {SidebarData.map((val,key)=>{
-            return (
-                <li key={key}
-                id={window.location.pathname === val.link ? "active" : ""}
-                 onClick={()=>{window.location.pathname = val.link}}>
-                    <div>{val.icon}</div>
-                    <div>{val.title}</div>
-                </li>
-            );
-        })}
+        <li>
+          <div >My Account</div>
+        </li>
+          <li onClick={() =>{isUserCheck()}}>{localStorage.getItem("isLogin")?<div>Logout</div> :<div>Login</div>}</li>
         </ul>
     </div>
   )

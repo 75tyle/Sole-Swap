@@ -9,12 +9,12 @@ export const SidebarData = [
         link:'/account'
     },
     {
-        title:'Login',
+        Login:'Login',
         // icon:<LoginIcon />,
         link:'/login'
     },
     {
-        title:'Logout',
+        Logout:'Logout',
         // icon:<LogoutIcon />,
         link:'/logout'
     }
