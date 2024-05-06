@@ -6,6 +6,9 @@ const Cart = () => {
   return (
     <div className='cart'>
       <CartItems />
+      <CartItems />
+      <CartItems />
+      <CartItems />
     </div>
   )
 }
