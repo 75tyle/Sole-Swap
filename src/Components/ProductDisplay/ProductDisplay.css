@@ -49,7 +49,7 @@
 .place_bid input{
     font-size: 20px;
     width: 215px;
-    height: 50px;
+    /* height: 30px; */
 }
 .place_bid button{
     font-size: 20px;
@@ -104,7 +104,7 @@
    
     .place_bid input{
         width: 215px;
-        height: 50px;
+        /* height: 30px; */
     }
     .place_bid button{
         height: 50px;

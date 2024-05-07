@@ -9,9 +9,9 @@ const CartItems = () => {
         <div className="item_img"><img src={product_img} alt="" /></div>
         <div className="item_details">
          <div className="item_name"><h1>Travis scoot 300s</h1></div>
-         <div className="item_description"><p>asdfghjkxcv wertyuio zxcvb wertyui ertyui sdfghj dfghj</p></div>
+         {/* <div className="item_description"><p>asdfghjkxcv wertyuio zxcvb wertyui ertyui sdfghj dfghj</p></div> */}
          <div className="item_price">$89</div>
-         <div className="PurchaseBtn"><button>Purchase</button></div>
+         <div className="PurchaseBtn"><button>Order Placed</button></div>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
     width: 200px;
     border: 1px solid gray;
     border-radius: 10px;
-    height: 242.42px;
+    /* height: 242.42px; */
 }
 .item p{
     margin-top: 0;
@@ -24,6 +24,7 @@
     color: white;
     font-size: larger;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .highestbid{
     width: 100%;
@@ -36,7 +37,7 @@
 @media(max-width:500px){
     .item{
         width: 165px;
-        height: 200px;
+        /* height: 200px; */
     }
     .item p{
         margin-left: 10px;
@@ -45,6 +46,7 @@
     .item button{
         width: 90%;
         margin-top: 10px;
+        margin-bottom: 10px;
         border-radius: 5px;
         border: none;
         height: 45px;

@@ -33,10 +33,10 @@
     margin-left: 10px;
     margin-right: 5px;
 }
-.item_description p{
+/* .item_description p{
     text-align: left;
     margin: 0;
-}
+} */
 .item_name h1{
     font-size: larger;
     margin: 0;
@@ -67,7 +67,7 @@
     .item_name h1{
         font-size: larger;
     }
-    .item_description p{
+    /* .item_description p{
         font-size: 14px;
-    }
+    } */
 }
