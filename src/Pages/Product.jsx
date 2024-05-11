@@ -11,9 +11,7 @@ const Product = ({product}) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-   
     const fetchData = async () => {
-     
       try {
         const response = await axios.get(`http://localhost:4011/api/products/getproducts/${id}`);
         setProduct(response.data); // Assuming the response contains product data

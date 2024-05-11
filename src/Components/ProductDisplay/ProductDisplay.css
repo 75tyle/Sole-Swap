@@ -1,6 +1,8 @@
 .productdisplay{
     display: flex;
     /* margin-top: 60px; */
+    margin-top: 105px;
+    margin-bottom: 70px;
 }
 .productdisplay hr{
     display: none;
@@ -58,6 +60,17 @@
 .listedtime{
     margin-left: 10px;
 }
+.bidding_list{
+    height: 200px;
+    overflow: auto;
+    margin-left: 10px;
+}
+.bidlist_data{
+    display: flex;
+    margin: 10px;
+    gap: 110px;
+}
+
 @media(max-width:500px){
     .productdisplay{
         display: block;

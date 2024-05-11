@@ -31,8 +31,11 @@ const LoginSignup = () => {
         console.log(loginData);
 
         axios.post('http://localhost:4011/api/user/login',loginData).then(res =>{
+          console.log(res)
           if(res.data.code === 200){
             localStorage.setItem("isLogin","true")
+            console.log(res.data.Userdata._id)
+            localStorage.setItem("userId",res.data.Userdata._id)
             navigate("/")
           }else{
             console.log("Something went wrong")
@@ -49,10 +52,17 @@ const LoginSignup = () => {
           Email:email,
           Password:password
         }
-        console.log(signupData);
+        // const signUp_Data_obj = JSON.stringify(signupData)
+        // console.log(signupData);
         // var data = axios.post();
         axios.post('http://localhost:4011/api/user/createuser',signupData).then(res =>{
-          console.log(res)
+          console.log(res.data)
+        if(res.data.code == 200){
+          localStorage.setItem("userId",res.data.data._id)
+        }else{
+          alert(res.data.Message)
+        }
+        
         })
         
       }
